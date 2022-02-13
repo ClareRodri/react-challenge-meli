@@ -5,6 +5,8 @@ import SearchBar from '../../../Shared/Components/SearchBar';
 
 export default function Header() {
     return <>
-        <SearchBar></SearchBar>
+        <div className='container'>
+            <SearchBar></SearchBar>
+        </div>
     </>
 }

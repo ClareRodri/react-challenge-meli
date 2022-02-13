@@ -1,8 +1,11 @@
 @import 'colors';
+@import 'containers';
 
-.App-main {
-    padding: 0 15px;
-}
-.App-main {
+.App {
     background-color: $bg-main;
 }
+.App-main {
+    padding: 0 15px;
+    height: 100%;
+}
+

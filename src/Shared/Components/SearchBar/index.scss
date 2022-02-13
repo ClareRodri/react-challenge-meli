@@ -1,0 +1,36 @@
+form.search-form {
+    width: 600px;
+    position: relative;
+}
+
+a.search-logo-meli {
+    background-image: url(https://uc2684c040eaa6d12da13c19ec1b.previews.dropboxusercontent.com/p/thumb/ABe6kT4gGUBn-9QZfC25-03g1db6USgH7cpa9xvYgjO0HXbCbrRgrk6uisE7xOFPpR6HubW9UCk53FPcO5pMav4CTMMhBicGWbSafZh7MA0dcpgcWvleVn5004pb7k3oDPJnXv_ooC2M9vqHExmQeK5viRqvTkvcIaABymdNUECG09DTSyLE8CBgm0GlGHAPlXofCJnGlqbxW_DR1fEwRy64B74dFxCNPZ0zu0wqBL883jfDj614ilUwzL9Eil2pv7JJ4yfvQRVRs9zprZloSLToCLOWFdPayrgFFENNIbbeYk1Z7yLmC73A-icL94JzPav7Y4KKW_XBXPtihxVJ94dimkMio-BM347d2MaFAZzn6Q/p.png);
+    background-repeat: no-repeat;
+    background-size: 50px 40px;
+    height: 40px;
+    width: 58px;
+    margin: auto 10px;
+    color: transparent;
+    cursor: pointer;
+}
+
+input.search-input {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    height: 39px;
+    padding: 5px 0 5px 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 0 rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+button.search-button {
+    font-size: 37px;
+    background-image: none;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

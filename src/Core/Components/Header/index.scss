@@ -1,0 +1,8 @@
+@import '../../../Styles/colors';
+
+.App-header {
+    background-color: $bg-principal;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}

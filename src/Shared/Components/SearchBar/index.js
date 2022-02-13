@@ -28,10 +28,8 @@ export default function SearchBar() {
                     type='text'
                     onClick={handleChangeInput}>
                 </input>
-                <button className='search-button' onClick={handleClicButton}>
-                    🔎
-                </button>
-                </form>
+                <button className='search-button' onClick={handleClicButton}></button>
+            </form>
         </div>
         
     </>

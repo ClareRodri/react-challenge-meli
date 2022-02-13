@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Header from './Core/Components/Header';
-import Home from './Pages/Home';
+import ProductSearch from './Pages/ProductSearch';
 import ProductDetail from './Pages/ProductDetail';
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
         <main className='App-main'>
           <div className='container'>
             <Routes>
-              <Route path="search/:searchItem" element={<Home />} />
+              <Route path="search/:sKeyword" element={<ProductSearch />} />
+              <Route path="detail/:id" element={<ProductDetail />} />
             </Routes>
           </div>
         </main>

@@ -1,0 +1,39 @@
+@import '../../../Styles/_colors.scss';
+
+.product-item-card {
+    display: flex;
+    padding: 0;
+    border-bottom: thin solid $bg-gray-light;
+}
+.product-item-card--image {
+    margin-right: 16px;
+    .product-item-card--image-img {
+        border-radius: 4px;
+        object-fit: contain;
+    }
+}
+.product-item-card--content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    width: 100%;
+    padding-right: 32px;
+
+    .product-item-card--content-title {
+        text-decoration: none;
+        color: $bg-gray;
+        font-size: 18px;
+        max-width: 500px;
+    }
+    .product-item-card--content-price {
+        color: $bg-gray;
+        font-size: 24px;
+    }
+    .product-item-card--content-place {
+        font-size: 12px;
+        color: $bg-gray-medium;
+        line-height: inherit;
+        float: right;
+    }
+}
+

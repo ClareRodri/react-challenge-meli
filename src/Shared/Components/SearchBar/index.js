@@ -24,11 +24,14 @@ export default function SearchBar() {
             <form className='search-form' onSubmit={handleSubmit}>
                 <input id="search-input"
                     className='search-input'
-                    placeholder='Busca productos y más...'
+                    placeholder='Nunca dejes de buscar'
                     type='text'
                     onClick={handleChangeInput}>
                 </input>
-                <button className='search-button' onClick={handleClicButton}></button>
+                <button
+                    aria-label={'Búsqueda de productos'}
+                    className='search-button'
+                    onClick={handleClicButton}></button>
             </form>
         </div>
         

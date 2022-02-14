@@ -10,6 +10,7 @@ import ProductDescription from '../../Components/Product/ProductDescription';
 export default function ProductDetail() {
     const { id } = useParams();
     const { loading, product } = useProductDetail(id);
+    const { item } = product;
     return <>
         <BreadCrumb></BreadCrumb>
         <div className='card'>
@@ -20,20 +21,20 @@ export default function ProductDetail() {
                         <div className='product-detail'>
                             <div className='product-detail-image'>
                                 <ProductImage
-                                    src={product.item.picture}
-                                    title={product.item.title}>
+                                    src={item.picture}
+                                    title={item.title}>
                                 </ProductImage>
                             </div>
                             <div className='product-detail-price'>
                                 <ProductPrice 
-                                    title={product.item.title}
-                                    price={product.item.price.amount}
-                                    condition={product.item.condition}>
+                                    title={item.title}
+                                    price={item.price.amount}
+                                    condition={item.condition}>
                                 </ProductPrice>
                             </div>
                             <div className='ml-6 mb-6 mt-6 product-detail-description'>
                                 <ProductDescription
-                                    description={product.item.description}>
+                                    description={item.description}>
                                 </ProductDescription>
                             </div>
                         </div>

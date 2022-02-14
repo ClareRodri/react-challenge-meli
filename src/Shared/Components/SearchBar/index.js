@@ -1,6 +1,6 @@
 import './index.scss';
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SearchBar() {
     const [sKeyword, setKeyword] = useState('');
@@ -20,7 +20,7 @@ export default function SearchBar() {
     
     return <>
         <div className='search-container'>
-            <a className='search-logo-meli'>Mercado Libre Colombia - Donde comprar y vender de todo</a>
+            <Link to="/" className='search-logo-meli'>Mercado Libre Colombia - Donde comprar y vender de todo</Link>
             <form className='search-form' onSubmit={handleSubmit}>
                 <input id="search-input"
                     className='search-input'

@@ -1,0 +1,13 @@
+@import './colors';
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-shopping {
+    background-color: $bg-blue;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+}

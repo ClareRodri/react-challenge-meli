@@ -16,7 +16,7 @@ function App() {
             <Header></Header>
         </header>
         <main className='App-main'>
-          <div className='container'>
+          <div className='container pb-6'>
             <Routes>
               <Route path="search/:sKeyword" element={<ProductSearch />} />
               <Route path="detail/:id" element={<ProductDetail />} />

@@ -3,6 +3,7 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 import useProductDetail from '../../Hooks/useProductDetail';
 import BreadCrumb from '../../Shared/Components/BreadCrumb';
+import Spinner from '../../Shared/Components/Spinner';
 import ProductImage from '../../Components/Product/ProductImage';
 import ProductPrice from '../../Components/Product/ProductPrice';
 import ProductDescription from '../../Components/Product/ProductDescription';
@@ -12,11 +13,11 @@ export default function ProductDetail() {
     const { loading, product } = useProductDetail(id);
     const { item } = product;
     return <>
-        <BreadCrumb></BreadCrumb>
+        { item!=undefined ? (<BreadCrumb categories={[item.category]}></BreadCrumb>) : ''}
         <div className='card'>
             {
                 loading
-                    ? <i className='loading'>Cargando.....</i>
+                    ? <Spinner></Spinner>
                     : (
                         <div className='product-detail'>
                             <div className='product-detail-image'>

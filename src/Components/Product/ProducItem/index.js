@@ -7,7 +7,7 @@ export default function ProductItem({ item }) {
     return <>
         <div className='mb-3 product-item-card'>
             <div className='product-item-card--image'>
-                <Link to={`/detail/${item.id}`}>
+                <Link to={`/items/${item.id}`}>
                     <img className='product-item-card--image-img'
                         src={item.picture}
                         alt={item.title}
@@ -23,7 +23,7 @@ export default function ProductItem({ item }) {
                         thousandSeparator={true} prefix={'$'} />
                     <span className='product-item-card--content-place'>{item.city_address}</span>
                 </p>
-                <Link className='mb-6 product-item-card--content-title' to={`/detail/${item.id}`}>
+                <Link className='mb-6 product-item-card--content-title' to={`/items/${item.id}`}>
                     <span>{item.title}</span>
                 </Link>
             </div>

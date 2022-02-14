@@ -8,14 +8,14 @@ export default function SearchBar() {
 
     const handleSubmit = ev => {
         ev.preventDefault();
-        navigate(`/search/${sKeyword}`);
+        navigate(`/items/${sKeyword}`);
     }
     const handleChangeInput = ev => { setKeyword(ev.target.value); }
     
     const handleClicButton = ev => { 
         ev.preventDefault();
         const productSearch = document.getElementById("search-input").value;
-        navigate(`/search/${productSearch}`);
+        navigate(`/items?search=${productSearch}`);
      }
     
     return <>

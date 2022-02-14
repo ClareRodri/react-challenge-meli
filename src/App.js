@@ -1,6 +1,6 @@
 import './App.scss';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
@@ -11,19 +11,19 @@ import ProductDetail from './Pages/ProductDetail';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <header className="App-header">
             <Header></Header>
         </header>
         <main className='App-main'>
           <div className='container pb-6'>
-            <Routes>
-              <Route path="search/:sKeyword" element={<ProductSearch />} />
-              <Route path="detail/:id" element={<ProductDetail />} />
-            </Routes>
+              <Routes>
+                <Route path="/items" element={<ProductSearch />}></Route>
+                <Route path="/items/:id" element={<ProductDetail />}></Route>
+              </Routes>
           </div>
         </main>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

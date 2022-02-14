@@ -5,7 +5,7 @@ import NumberFormat from 'react-number-format';
 
 export default function ProductItem({ item }) {
     return <>
-        <div className='mb-3 product-item-card'>
+        <div className='py-3 product-item-card'>
             <div className='product-item-card--image'>
                 <Link to={`/items/${item.id}`}>
                     <img className='product-item-card--image-img'

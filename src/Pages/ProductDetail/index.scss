@@ -1,0 +1,17 @@
+.product-detail-image,
+.product-detail-price {
+    display: inline-block;
+}
+
+.product-detail-image,
+.product-detail-description
+{
+    width: 70%;
+}
+
+.product-detail-price {
+    width: 25%;
+    vertical-align: top;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}

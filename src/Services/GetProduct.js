@@ -4,6 +4,6 @@ export default function getProduct({ sKeyword = "" } = {}) {
         .then(rest => rest.json())
         .then(resp => {
             const { author, items, categories } = resp;
-            return { author, items, categories }
+            return { author, items, categories };
         });
 }

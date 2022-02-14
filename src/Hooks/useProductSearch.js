@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import getProduct from '../Services/Product/GetProduct';
+import getProduct from '../Services/GetProduct';
 
 export default function useProductSearch({ sKeyword } = { sKeyword: '' }) {
     const [products, setProducts] = useState([]);

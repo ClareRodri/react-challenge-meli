@@ -1,0 +1,11 @@
+
+@import '../../../Styles/colors';
+
+.product-description--title {
+    font-size: 28px;
+    font-weight: 600;
+}
+.product-description--description {
+    font-size: 1rem;
+    color: $bg-gray-medium;
+}

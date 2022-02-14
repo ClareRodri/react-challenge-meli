@@ -1,0 +1,11 @@
+@import './colors';
+
+.typ-detail {
+    font-size: 14px;
+}
+
+.typ-detail-condition {
+    @extend .typ-detail;
+    color: $bg-gray;
+    font-size: 14px;
+}

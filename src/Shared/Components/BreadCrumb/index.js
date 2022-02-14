@@ -21,8 +21,8 @@ export default function BreadCrumb() {
                             <strong>{title}</strong>
                         </span>)
                     : (<span>
-                            <Link className='breadcrumb-title' key={key} to={url}> {title}</Link>
-                            <span className='breadcrumb-title mx-2'> {'>'} </span>
+                        <Link className='breadcrumb-title typ-detail' key={key} to={url}> {title}</Link>
+                        <span className='breadcrumb-title typ-detail mx-2'> {'>'} </span>
                         </span>)
                }
             )}

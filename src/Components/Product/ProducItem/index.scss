@@ -19,6 +19,13 @@
     width: 100%;
     padding-right: 32px;
 
+    .product-item-card--content-freeshipping {
+        background-image: url('../../../assets/img/ic_shipping.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        color: transparent;
+        margin: 10px;
+    }
     .product-item-card--content-title {
         text-decoration: none;
         color: $bg-gray;

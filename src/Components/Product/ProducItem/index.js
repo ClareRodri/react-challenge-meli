@@ -21,6 +21,11 @@ export default function ProductItem({ item }) {
                         value={item.price.amount}
                         displayType={'text'}
                         thousandSeparator={true} prefix={'$'} />
+                    {
+                        item.freeShipping
+                        ? <span className='product-item-card--content-freeshipping'>Free sheeping</span>
+                        : <></>
+                    }
                     <span className='product-item-card--content-place'>{item.city_address}</span>
                 </p>
                 <Link className='mb-6 product-item-card--content-title' to={`/items/${item.id}`}>

@@ -30,7 +30,9 @@ export default function ProductDetail() {
                                 <ProductPrice 
                                     title={item.title}
                                     price={item.price.amount}
-                                    condition={item.condition}>
+                                    condition={item.condition}
+                                    sold_quantity={item.sold_quantity}
+                                    >
                                 </ProductPrice>
                             </div>
                             <div className='ml-6 mb-6 mt-6 product-detail-description'>

@@ -1,22 +1,27 @@
 import './index.scss';
-import React, { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function SearchBar() {
     const [sKeyword, setKeyword] = useState('');
     const navigate = useNavigate();
-
+    const location = useLocation()
+    const search = new URLSearchParams(location.search).get('search');
+    
+    const handleChangeInput = ev => { setKeyword(ev.target.value); }
     const handleSubmit = ev => {
         ev.preventDefault();
         navigate(`/items/${sKeyword}`);
     }
-    const handleChangeInput = ev => { setKeyword(ev.target.value); }
-    
     const handleClicButton = ev => { 
         ev.preventDefault();
         const productSearch = document.getElementById("search-input").value;
         navigate(`/items?search=${productSearch}`);
-     }
+    }
+    
+    useEffect(() => {
+        document.getElementById("search-input").value = search;
+    }, [location]);
     
     return <>
         <div className='search-container'>
@@ -34,6 +39,5 @@ export default function SearchBar() {
                     onClick={handleClicButton}></button>
             </form>
         </div>
-        
     </>
 }

@@ -11,7 +11,7 @@ export default function ProductSearch() {
     const { loading, products } = useProductSearch({ sKeyword: search });
     const { categories } = products;
     return <>
-        {categories !== undefined? (<BreadCrumb categories={categories}></BreadCrumb>) : ''}
+        {categories !== undefined ? (<BreadCrumb categories={categories}></BreadCrumb>) : <div className='py-3'></div>}
         <div className='card'>
             {
                 loading

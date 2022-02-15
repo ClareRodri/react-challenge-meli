@@ -13,7 +13,7 @@ export default function ProductDetail() {
     const { loading, product } = useProductDetail(id);
     const { item } = product;
     return <>
-        { item!=undefined ? (<BreadCrumb categories={[item.category]}></BreadCrumb>) : ''}
+        {item != undefined ? (<BreadCrumb categories={[item.category]}></BreadCrumb>) : <div className='py-3'></div>}
         <div className='card'>
             {
                 loading

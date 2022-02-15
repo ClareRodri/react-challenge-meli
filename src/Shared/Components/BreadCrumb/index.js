@@ -9,15 +9,14 @@ export default function BreadCrumb({ categories }) {
                 categories.map(({ title }, key) => {
                     url = `/items?search=${title}`;
                     
-                    return (categories.length - 1 === key)
-                        ? (<span className='breadcrumb-title' key={key}>
-                            <Link className='breadcrumb-title typ-detail' key={key} to={url}> <strong>{title}</strong></Link>
-                               
-                        </span>)
-                        : (<span>
-                            <Link className='breadcrumb-title typ-detail' key={key} to={url}> {title}</Link>
-                            <span className='breadcrumb-title typ-detail mx-2'> {'>'} </span>
-                        </span>)
+                    return (key === categories.length - 1)
+                        ? (<span className='breadcrumb-title' key={`title-${key}`}>
+                                <Link className='breadcrumb-title typ-detail' key={key} to={url}> <strong>{title}</strong></Link>
+                            </span>)
+                        : (<span className='breadcrumb-title' key={`title-${key}`}>
+                                <Link className='breadcrumb-title typ-detail' key={key} to={url}> {title}</Link>
+                                <span className='breadcrumb-title typ-detail mx-2'> {'>'} </span>
+                            </span>)
                }
             )}
         </div>
